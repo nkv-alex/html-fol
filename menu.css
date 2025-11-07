@@ -10,4 +10,5 @@ display: flex; margin-right: 25%;
 
 .menu{
 display: flex; background-color: rgb(37, 37, 37); color: rgb(0, 145, 145); padding: 10px; border-radius: 10px;
+align-self: auto;
 }
