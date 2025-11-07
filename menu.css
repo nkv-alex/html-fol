@@ -14,7 +14,7 @@ align-self: auto;
 }
 
 .menu li {
-margin-right: 33%; list-style: none; align-self: center; font-size: 16px; text-align: center;
+margin-right: auto; list-style: none; align-self: center; font-size: 16px; text-align: center;
 position: relative;
 transition: transform 0.12s ease, color 0.12s ease;
 transform-origin: center center; 
