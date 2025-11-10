@@ -1,32 +1,140 @@
-/* Asegurarse de que el contenido no quede debajo del menú fijo */
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%; /* altura completa de la ventana */
-}
-
 body {
-    padding-top: 60px; /* altura del menú */
+    background-color:rgb(0, 0, 0)
+}
+
+
+
+
+/* =========================
+   PRODUCTOS
+   ========================= */
+.div-productos {
+    min-height: 100%;
+    margin-left: 100px;
+    margin-right: 100px;
+    
+}
+
+.div-productos h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30pt;
+    color: aliceblue;
+}
+
+.div-productos h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+}
+
+.div-productos .div-texto,
+.div-productos p {
+    max-width: 75%;
+    word-wrap: break-word;
+    text-align: left;   
+    margin-left: 0;
+    color: aliceblue;
+}
+
+/* =========================
+   DESARROLLO
+   ========================= */
+.div-desarollo {
+    min-height: 100%;
+    text-align: right;      
+    align-self: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.div-desarollo h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30pt;
+    color: aliceblue;
+}
+
+.div-desarollo h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+}
+
+.div-desarollo .div-contenido {
+    display: flex;          
+    align-items: flex-start; 
+    gap: 20px;             
+}
+
+.div-desarollo .div-contenido img {
+    width: 250px;           
+    height: auto;
+    border-radius: 5px;   
+    margin-left: 50px;
+}
+
+.div-desarollo .div-texto,
+.div-desarollo p {
+    flex: 1;                
+    max-width: 90%;
+    word-wrap: break-word;
+    text-align: right;      
+    margin-left: auto;
+    color: aliceblue;
+}
+
+/* =========================
+   PRODUCTOS FINALES
+   ========================= */
+.div-pr-final {
+    min-height: 100%;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.div-pr-final h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30pt;
+    color: aliceblue;
+}
+
+.div-pr-final h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+}
+
+.div-pr-final .div-texto,
+.div-pr-final p {
+    max-width: 70%;
+    word-wrap: break-word;
+    text-align: left;   
+    margin-left: 0;
+    color: aliceblue;
+}
+
+/* =========================
+            bottones
+   ========================= */
+   .home-button {
+    margin-top: 30px;
+    background-color: #E91932;
+    color: #ECE7E1;
+    width: 380px;
+    height: 67px;
+    font-size: 16pt;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
     display: flex;
-    flex-direction: column;
-}
+    justify-content: center; 
+    align-items: center;     
+    border: none;            
+    cursor: pointer;        
 
-/* Contenedor de columnas */
-.content {
-    display: flex;
-    flex: 1; /* ocupa todo el espacio restante debajo del menú */
-    gap: 0px;
+    border-radius: 5px;
 
-}
+    transition: all 0.3s ease; 
+    
+    }
 
-/* Columnas */
-.column {
-    flex: 1; /* cada columna ocupa el mismo ancho */
-    background-color: #f5f5f5;
-    padding: 20px;
-    box-sizing: border-box;
-    border: 1px solid #ddd;
-    min-height: 100%; /* asegura que llegue al fondo */
-}
+    .home-button:hover{
+        background-color: #ECE7E1;
+        color: black;
 
-
+    }
