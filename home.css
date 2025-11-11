@@ -4,15 +4,37 @@ body {
 
 
 
-
 /* =========================
    PRODUCTOS
    ========================= */
 .div-productos {
-    min-height: 100%;
+    position: relative;
+    min-height: 100vh;
     margin-left: 100px;
     margin-right: 100px;
-    
+    overflow: hidden;
+}
+
+/* Video de fondo */
+.div-productos .video-fondo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    z-index: 0;
+    filter: brightness(0.5); /* oscurece el fondo para mejor lectura */
+}
+
+/* Contenido encima del video */
+.div-productos .contenido-productos {
+    position: relative;
+    z-index: 1;
+    color: aliceblue;
+    text-align: left;
+    padding: 80px 40px;
 }
 
 .div-productos h1 {
@@ -107,6 +129,12 @@ body {
     text-align: left;   
     margin-left: 0;
     color: aliceblue;
+}
+
+.div-productos,
+.div-desarollo,
+.div-pr-final {
+    margin-bottom: 120px; /* más separación */
 }
 
 /* =========================
